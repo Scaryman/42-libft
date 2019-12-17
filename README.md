@@ -1,7 +1,7 @@
 # 42-libft
 School 42 project - [Libft](libft.en.pdf).
 # Table of Contents
-* Part 1 - Libc functions
+* [Part 1 - Libc functions](#part-1---libc-functions)
   * [ft_memset](#ft_memset)
   * [ft_bzero](#ft_bzero)
   * [ft_memcpy](#ft_memcpy)
