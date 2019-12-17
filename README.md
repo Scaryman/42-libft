@@ -102,42 +102,118 @@ Returns a pointer to a new string which is a duplicate of the string s. Memory f
 Returns a pointer to the duplicated string, or NULL if insufficient memory was available.
 ## [ft_strcpy](ft_strcpy.c)
 `char *ft_strcpy(char *str1, const char *str2)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strncpy](ft_strncpy.c)
 `char *ft_strncpy(char *dest, const char *src, size_t n)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strcat](ft_strcat.c)
 `char *ft_strcat(char *s1, const char *s2)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strncat](ft_strncat.c)
 `char *ft_strncat(char *s1, const char *s2, size_t n)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strlcat](ft_strlcat.c)
 `size_t ft_strlcat(char *dst, const char *src, size_t dstsize)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strchr](ft_strchr.c)
 `char *ft_strchr(const char *s, int c)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strrchr](ft_strrchr.c)
 `char *ft_strrchr(const char *s, int c)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strstr](ft_strstr.c)
 `char *ft_strstr(const char *s1, const char *s2)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strnstr](ft_strnstr.c)
 `char *ft_strnstr(const char *s1, const char *s2, size_t len)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strcmp](ft_strcmp.c)
 `int ft_strcmp(const char *str1, const char *str2)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_strncmp](ft_strncmp.c)
 `int ft_strncmp(const char *s1, const char *s2, size_t n)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_atoi](ft_atoi.c)
 `int ft_atoi(const char *str)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_isalpha](ft_isalpha.c)
 `int ft_isalpha(int c)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_isdigit](ft_isdigit.c)
 `int ft_isdigit(int c)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_isalnum](ft_isalnum.c)
 `int ft_isalnum(int c)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_isascii](ft_isascii.c)
 `int ft_isascii(int c)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_isprint](ft_isprint.c)
 `int ft_isprint(int c)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_toupper](ft_toupper.c)
 `int ft_toupper(int c)`
+
+[description]
+### Return Value
+[return_value]
 ## [ft_tolower](ft_tolower.c)
 `int ft_tolower(int c)`
+
+[description]
+### Return Value
+[return_value]
 # Part 2 - Additional functions
 ## [ft_memalloc](ft_memalloc.c)
 `void * ft_memalloc(size_t size)`
