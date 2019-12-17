@@ -157,7 +157,7 @@ None.
 Allocates with **malloc** and returns a "fresh" string ending with '\0'. Each character of the string is initialized at
 '\0'. If the allocation fails the function returns NULL.
 ### Return Value
-The string allocated and initialized to 0.
+Returns the string allocated and initialized to 0.
 ## [ft_strdel](ft_strdel.c)
 `void ft_strdel(char **as)`
 
@@ -187,13 +187,13 @@ None.
 
 Applies the function f to each character of the string given as argument to create a "fresh" new string with **malloc** resulting from the successive applications of f.
 ### Return Value
-The "fresh" string created from the successive applications of f.
+Returns the "fresh" string created from the successive applications of f.
 ## [ft_strmapi](ft_strmapi.c)
 `char * ft_strmapi(char const *s, char (*f)(unsigned int, char))`
 
 Applies the function f to each character of the string passed as argument by giving its index as first argument to create a "fresh" new string with **malloc** resulting from the successive applications of f.
 ### Return Value
-The "fresh" string created from the successive applications of f.
+Returns the "fresh" string created from the successive applications of f.
 ## [ft_putnbr](ft_putnbr.c)
 `void ft_putnbr(int n)`
 
