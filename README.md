@@ -8,6 +8,7 @@ School 42 project - Libft
 * [ft_memmove](#ft_memmove)
 * [ft_memchr](#ft_memchr)
 * [ft_memcmp](#ft_memcmp)
+* [ft_strlen](#ft_strlen)
 ## ft_memset
 `void	*ft_memset(void *str, int c, size_t n)`
 
@@ -85,7 +86,7 @@ Returns a pointer to the matching byte or NULL if the character does not occur i
 
 Compares the first n bytes (each interpreted as unsigned char) of the memory areas buf1 and buf2.
 ### Parameters
-`buf2` - Pointer to the first block of memory.
+`buf1` - Pointer to the first block of memory.
 
 `buf2` - Pointer to the second block of memory.
 
@@ -93,3 +94,11 @@ Compares the first n bytes (each interpreted as unsigned char) of the memory are
 ### Return Value
 Returns an integer less than, equal to, or greater than zero if the first n bytes of buf1 is found, respectively, to be less than, to match, or be greater than the first n bytes of buf2.
 For a nonzero return value, the sign is determined by the sign of the difference between the first pair of bytes (interpreted as unsigned char) that differ in buf1 and buf2.
+## ft_strlen
+`size_t	ft_strlen(const char *str)`
+
+Calculates the length of the string str, excluding the terminating null byte.
+### Parameters
+`str` - Pointer to the string.
+### Return Value
+Returns the number of bytes in the string str.
