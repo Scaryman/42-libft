@@ -7,6 +7,7 @@ School 42 project - Libft
 * [ft_memccpy](#ft_memccpy)
 * [ft_memmove](#ft_memmove)
 * [ft_memchr](#ft_memchr)
+* [ft_memcmp](#ft_memcmp)
 ## ft_memset
 `void	*ft_memset(void *str, int c, size_t n)`
 
@@ -68,7 +69,7 @@ Copies n bytes from memory area src to memory area dest. The memory areas may ov
 ### Return Value
 Returns a pointer to dest.
 ## ft_memchr
-`void	*ft_memchr(const void *str, int c, size_t n)`
+`void *ft_memchr(const void *str, int c, size_t n)`
 
 Scans the initial n bytes of the memory area pointed to by str for the first instance of c. Both c and the bytes of the memory area pointed to by str are interpreted as unsigned char.
 ### Parameters
@@ -79,3 +80,16 @@ Scans the initial n bytes of the memory area pointed to by str for the first ins
 `n` - Number of bytes to scan.
 ### Return Value
 Returns a pointer to the matching byte or NULL if the character does not occur in the given memory area.
+## ft_memcmp
+`int ft_memcmp(const void *buf1, const void *buf2, size_t n)`
+
+Compares the first n bytes (each interpreted as unsigned char) of the memory areas buf1 and buf2.
+### Parameters
+`buf2` - Pointer to the first block of memory.
+
+`buf2` - Pointer to the second block of memory.
+
+`n` - Number of bytes to compare.
+### Return Value
+Returns an integer less than, equal to, or greater than zero if the first n bytes of buf1 is found, respectively, to be less than, to match, or be greater than the first n bytes of buf2.
+For a nonzero return value, the sign is determined by the sign of the difference between the first pair of bytes (interpreted as unsigned char) that differ in buf1 and buf2.
