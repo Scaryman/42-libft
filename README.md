@@ -47,7 +47,7 @@ School 42 project - [Libft](libft.en.pdf).
   * [ft_putnbr_fd](#ft_putnbr_fd)
 * [Bonus part](#bonus-part)
 # Part 1 - Libc functions
-## ft_memset
+## [ft_memset](ft_memset.c)
 `void	*ft_memset(void *str, int c, size_t n)`
 
 Sets the first n bytes of the block of memory pointed by str to the specified value (interpreted as an unsigned char).
