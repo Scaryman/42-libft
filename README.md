@@ -56,6 +56,12 @@ School 42 project - [Libft](libft.en.pdf).
   * [ft_putendl_fd](#ft_putendl_fd)
   * [ft_putnbr_fd](#ft_putnbr_fd)
 * [Bonus part](#bonus-part)
+  * [ft_lstnew](#ft_lstnew)
+  * [ft_lstdelone](#ft_lstdelone)
+  * [ft_lstdel](#ft_lstdel)
+  * [ft_lstadd](#ft_lstadd)
+  * [ft_lstiter](#ft_lstiter)
+  * [ft_lstmap](#ft_lstmap)
 # Part 1 - Libc functions
 ## [ft_memset](ft_memset.c)
 `void	*ft_memset(void *str, int c, size_t n)`
@@ -371,3 +377,39 @@ Outputs the integer n to the file descriptor fd.
 ### Return Value
 None.
 # Bonus part
+## [ft_lstnew](ft_lstnew.c)
+`t_list * ft_lstnew(void const *content, size_t content_size)`
+
+Allocates with **malloc** and returns a "fresh" link. The variables content and content_size of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content_size is initialized to 0 even if the parameter content_size isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL.
+### Return Value
+Returns the new list.
+## [ft_lstdelone](ft_lstdelone.c)
+`void ft_lstdelone(t_list **alst, void (*del)(void *, size_t))`
+
+Takes as a parameter a link’s pointer address and frees the memory of the link’s content using the function del given as a parameter, then frees the link’s memory using **free**. The memory of next must not be freed under any circumstance. Finally, the pointer to the link that was just freed must be set to NULL (quite similar to the function ft_memdel in the mandatory part).
+### Return Value
+None.
+## [ft_lstdel](ft_lstdel.c)
+`void ft_lstdel(t_list **alst, void (*del)(void *, size_t))`
+
+Takes as a parameter the adress of a pointer to a link and frees the memory of this link and every successors of that link using the functions del and free(3). Finally the pointer to the link that was just freed must be set to NULL (quite similar to the function ft_memdel from the mandatory part).
+### Return Value
+None.
+## [ft_lstadd](ft_lstadd.c)
+`void ft_lstadd(t_list **alst, t_list *new)`
+
+Adds the element new at the beginning of the list.
+### Return Value
+None.
+## [ft_lstiter](ft_lstiter.c)
+`void ft_lstiter(t_list *lst, void (*f)(t_list *elem))`
+
+Iterates the list lst and applies the function f to each link.
+### Return Value
+None.
+## [ft_lstmap](ft_lstmap.c)
+`t_list * ft_lstmap(t_list *lst, t_list * (*f)(t_list *elem))`
+
+Iterates a list lst and applies the function f to each link to create a “fresh” list (using malloc(3)) resulting from the successive applications of f. If the allocation fails, the function returns NULL.
+### Return Value
+Returns the new list.
