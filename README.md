@@ -2,6 +2,7 @@
 School 42 project - Libft
 # Table of Contents
 * [ft_memset](#ft_memset)
+* [ft_bzero](#ft_bzero)
 ## ft_memset
 `void	*ft_memset(void *str, int c, size_t n)`
 
