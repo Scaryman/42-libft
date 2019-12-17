@@ -9,6 +9,7 @@ School 42 project - [Libft](libft.en.pdf).
 * [ft_memchr](#ft_memchr)
 * [ft_memcmp](#ft_memcmp)
 * [ft_strlen](#ft_strlen)
+* [ft_strdup](#ft_strdup)
 ## ft_memset
 `void	*ft_memset(void *str, int c, size_t n)`
 
@@ -58,3 +59,7 @@ For a nonzero return value, the sign is determined by the sign of the difference
 Calculates the length of the string str, excluding the terminating null byte.
 ### Return Value
 Returns the number of bytes in the string str.
+## ft_strdup
+Returns a pointer to a new string which is a duplicate of the string s. Memory for the new string is obtained with **malloc**, and can be freed with **free**.
+### Return Value
+Returns a pointer to the duplicated string, or NULL if insufficient memory was available.
