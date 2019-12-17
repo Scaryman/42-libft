@@ -1,5 +1,5 @@
 # 42-libft
-School 42 project - Libft.
+School 42 project - [Libft](libft.en.pdf).
 # Table of Contents
 * [ft_memset](#ft_memset)
 * [ft_bzero](#ft_bzero)
