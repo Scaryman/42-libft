@@ -40,6 +40,16 @@ School 42 project - [Libft](libft.en.pdf).
   * [ft_striteri](#ft_striteri)
   * [ft_strmap](#ft_strmap)
   * [ft_strmapi](#ft_strmapi)
+  * [ft_strequ](#ft_strequ)
+  * [ft_strnequ](#ft_strnequ)
+  * [ft_strsub](#ft_strsub)
+  * [ft_strjoin](#ft_strjoin)
+  * [ft_strtrim](#ft_strtrim)
+  * [ft_strsplit](#ft_strsplit)
+  * [ft_itoa](#ft_itoa)
+  * [ft_putchar](#ft_putchar)
+  * [ft_putstr](#ft_putstr)
+  * [ft_putendl](#ft_putendl)
   * [ft_putnbr](#ft_putnbr)
   * [ft_putchar_fd](#ft_putchar_fd)
   * [ft_putstr_fd](#ft_putstr_fd)
@@ -270,6 +280,66 @@ Returns the "fresh" string created from the successive applications of f.
 Applies the function f to each character of the string passed as argument by giving its index as first argument to create a "fresh" new string with **malloc** resulting from the successive applications of f.
 ### Return Value
 Returns the "fresh" string created from the successive applications of f.
+## [ft_strequ](ft_strequ.c)
+`int ft_strequ(char const *s1, char const *s2)`
+
+Lexicographical comparison between s1 and s2. If the 2 strings are identical the function returns 1, or 0 otherwise.
+### Return Value
+Returns 1 or 0 according to if the 2 strings are identical or not.
+## [ft_strnequ](ft_strnequ.c)
+`int ft_strnequ(char const *s1, char const *s2, size_t n)`
+
+Lexicographical comparison between s1 and s2 up to n characters or until a '\0' is reached. If the 2 strings are identical, the function returns 1, or 0 otherwise.
+### Return Value
+Returns 1 or 0 according to if the 2 strings are identical or not.
+## [ft_strsub](ft_strsub.c)
+`char * ft_strsub(char const *s, unsigned int start, size_t len)`
+
+Allocates with **malloc** and returns a "fresh" substring from the string given as argument. The substring begins at indexstart and is of size len. If start and len aren’t refering to a valid substring, the behavior is undefined. If the allocation fails, the function returns NULL.
+### Return Value
+Returns the substring.
+## [ft_strjoin](ft_strjoin.c)
+`char * ft_strjoin(char const *s1, char const *s2)`
+
+Allocates with **malloc** and returns a “fresh” string ending with ’\0’, result of the concatenation of s1 and s2. If the allocation fails the function returns NULL.
+### Return Value
+Returns the "fresh" string result of the concatenation of the 2 strings.
+## [ft_strtrim](ft_strtrim.c)
+`char * ft_strtrim(char const *s)`
+
+Allocates with **malloc** and returns a copy of the string given as argument without whitespaces at the beginning or at the end of the string. Will be considered as whitespaces the following characters ' ', '\n' and '\t'. If s has no whitespaces at the beginning or at the end, the function returns a copy of s. If the allocation fails the function returns NULL.
+### Return Value
+Returns the "fresh" trimmed string or a copy of s.
+## [ft_strsplit](ft_strsplit.c)
+`char ** ft_strsplit(char const *s, char c)`
+
+Allocates with **malloc** and returns an array of "fresh" strings (all ending with '\0', including the array itself) obtained by spliting s using the character c as a delimiter. If the allocation fails the function returns NULL.
+### Return Value
+Returns the array of "fresh" strings result of the split.
+## [ft_itoa](ft_itoa.c)
+`char * ft_itoa(int n)`
+
+Allocate with **malloc** and returns a "fresh" string ending with '\0' representing the integer n given as argument. Negative numbers must be supported. If the allocation fails, the function returns NULL.
+### Return Value
+Returns the string representing the integer passed as argument.
+## [ft_putchar](ft_putchar.c)
+`void ft_putchar(char c)`
+
+Outputs the character c to the standard output.
+### Return Value
+None.
+## [ft_putstr](ft_putstr.c)
+`void ft_putstr(char const *s)`
+
+Outputs the string s to the standard output.
+### Return Value
+None.
+## [ft_putendl](ft_putendl.c)
+`void ft_putendl(char const *s)`
+
+Outputs the string s to the standard output followed by a '\n'.
+### Return Value
+None.
 ## [ft_putnbr](ft_putnbr.c)
 `void ft_putnbr(int n)`
 
