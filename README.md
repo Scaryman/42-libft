@@ -1,15 +1,17 @@
 # 42-libft
 School 42 project - [Libft](libft.en.pdf).
 # Table of Contents
-* [ft_memset](#ft_memset)
-* [ft_bzero](#ft_bzero)
-* [ft_memcpy](#ft_memcpy)
-* [ft_memccpy](#ft_memccpy)
-* [ft_memmove](#ft_memmove)
-* [ft_memchr](#ft_memchr)
-* [ft_memcmp](#ft_memcmp)
-* [ft_strlen](#ft_strlen)
-* [ft_strdup](#ft_strdup)
+* Part 1 - Libc functions
+  * [ft_memset](#ft_memset)
+  * [ft_bzero](#ft_bzero)
+  * [ft_memcpy](#ft_memcpy)
+  * [ft_memccpy](#ft_memccpy)
+  * [ft_memmove](#ft_memmove)
+  * [ft_memchr](#ft_memchr)
+  * [ft_memcmp](#ft_memcmp)
+  * [ft_strlen](#ft_strlen)
+  * [ft_strdup](#ft_strdup)
+# Part 1 - Libc functions
 ## ft_memset
 `void	*ft_memset(void *str, int c, size_t n)`
 
