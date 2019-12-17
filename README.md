@@ -11,6 +11,41 @@ School 42 project - [Libft](libft.en.pdf).
   * [ft_memcmp](#ft_memcmp)
   * [ft_strlen](#ft_strlen)
   * [ft_strdup](#ft_strdup)
+  * [ft_strcpy](#ft_strcpy)
+  * [ft_strncpy](#ft_strncpy)
+  * [ft_strcat](#ft_strcat)
+  * [ft_strncat](#ft_strncat)
+  * [ft_strlcat](#ft_strlcat)
+  * [ft_strchr](#ft_strchr)
+  * [ft_strrchr](#ft_strrchr)
+  * [ft_strstr](#ft_strstr)
+  * [ft_strnstr](#ft_strnstr)
+  * [ft_strcmp](#ft_strcmp)
+  * [ft_strncmp](#ft_strncmp)
+  * [ft_atoi](#ft_atoi)
+  * [ft_isalpha](#ft_isalpha)
+  * [ft_isdigit](#ft_isdigit)
+  * [ft_isalnum](#ft_isalnum)
+  * [ft_isascii](#ft_isascii)
+  * [ft_isprint](#ft_isprint)
+  * [ft_toupper](#ft_toupper)
+  * [ft_tolower](#ft_tolower)
+* [Part 2 - Additional functions](#part-2---additional-functions)
+  * [ft_memalloc](#ft_memalloc)
+  * [ft_memdel](#ft_memdel)
+  * [ft_strnew](#ft_strnew)
+  * [ft_strdel](#ft_strdel)
+  * [ft_strclr](#ft_strclr)
+  * [ft_striter](#ft_striter)
+  * [ft_striteri](#ft_striteri)
+  * [ft_strmap](#ft_strmap)
+  * [ft_strmapi](#ft_strmapi)
+  * [ft_putnbr](#ft_putnbr)
+  * [ft_putchar_fd](#ft_putchar_fd)
+  * [ft_putstr_fd](#ft_putstr_fd)
+  * [ft_putendl_fd](#ft_putendl_fd)
+  * [ft_putnbr_fd](#ft_putnbr_fd)
+* [Bonus part](#bonus-part)
 # Part 1 - Libc functions
 ## ft_memset
 `void	*ft_memset(void *str, int c, size_t n)`
@@ -65,3 +100,128 @@ Returns the number of bytes in the string str.
 Returns a pointer to a new string which is a duplicate of the string s. Memory for the new string is obtained with **malloc**, and can be freed with **free**.
 ### Return Value
 Returns a pointer to the duplicated string, or NULL if insufficient memory was available.
+## ft_strcpy
+`char *ft_strcpy(char *str1, const char *str2)`
+## ft_strncpy
+`char *ft_strncpy(char *dest, const char *src, size_t n)`
+## ft_strcat
+`char *ft_strcat(char *s1, const char *s2)`
+## ft_strncat
+`char *ft_strncat(char *s1, const char *s2, size_t n)`
+## ft_strlcat
+`size_t ft_strlcat(char *dst, const char *src, size_t dstsize)`
+## ft_strchr
+`char *ft_strchr(const char *s, int c)`
+## ft_strrchr
+`char *ft_strrchr(const char *s, int c)`
+## ft_strstr
+`char *ft_strstr(const char *s1, const char *s2)`
+## ft_strnstr
+`char *ft_strnstr(const char *s1, const char *s2, size_t len)`
+## ft_strcmp
+`int ft_strcmp(const char *str1, const char *str2)`
+## ft_strncmp
+`int ft_strncmp(const char *s1, const char *s2, size_t n)`
+## ft_atoi
+`int ft_atoi(const char *str)`
+## ft_isalpha
+`int ft_isalpha(int c)`
+## ft_isdigit
+`int ft_isdigit(int c)`
+## ft_isalnum
+`int ft_isalnum(int c)`
+## ft_isascii
+`int ft_isascii(int c)`
+## ft_isprint
+`int ft_isprint(int c)`
+## ft_toupper
+`int ft_toupper(int c)`
+## ft_tolower
+`int ft_tolower(int c)`
+# Part 2 - Additional functions
+## ft_memalloc
+`void * ft_memalloc(size_t size)`
+
+Allocates with **malloc** and returns a "fresh" memory area. The memory allocated is initialized to 0. If the allocation fails, the function returns NULL.
+### Return Value
+Returns the allocated memory area.
+## ft_memdel
+`void ft_memdel(void **ap)`
+
+Takes as a parameter the address of a memory area that needs to be freed with **free**, then puts the pointer to NULL.
+### Return Value
+None.
+## ft_strnew
+`char * ft_strnew(size_t size)`
+
+Allocates with **malloc** and returns a "fresh" string ending with '\0'. Each character of the string is initialized at
+'\0'. If the allocation fails the function returns NULL.
+### Return Value
+The string allocated and initialized to 0.
+## ft_strdel
+`void ft_strdel(char **as)`
+
+Takes as a parameter the address of a string that need to be freed with **free**, then sets its pointer to NULL.
+### Return Value
+None.
+## ft_strclr
+`void ft_strclr(char *s)`
+
+Sets every character of the string to the value '\0'.
+### Return Value
+None.
+## ft_striter
+`void ft_striter(char *s, void (*f)(char *))`
+
+Applies the function f to each character of the string passed as argument. Each character is passed by address to f to be modified if necessary.
+### Return Value
+None.
+## ft_striteri
+`void ft_striteri(char *s, void (*f)(unsigned int, char *))`
+
+Applies the function f to each character of the string passed as argument, and passing its index as first argument. Each character is passed by address to f to be modified if necessary.
+### Return Value
+None.
+## ft_strmap
+`char * ft_strmap(char const *s, char (*f)(char))`
+
+Applies the function f to each character of the string given as argument to create a "fresh" new string with **malloc** resulting from the successive applications of f.
+### Return Value
+The "fresh" string created from the successive applications of f.
+## ft_strmapi
+`char * ft_strmapi(char const *s, char (*f)(unsigned int, char))`
+
+Applies the function f to each character of the string passed as argument by giving its index as first argument to create a "fresh" new string with **malloc** resulting from the successive applications of f.
+### Return Value
+The "fresh" string created from the successive applications of f.
+## ft_putnbr
+`void ft_putnbr(int n)`
+
+Outputs the integer n to the standard output.
+### Return Value
+None.
+## ft_putchar_fd
+`void ft_putchar_fd(char c, int fd)`
+
+Outputs the char c to the file descriptor fd.
+### Return Value
+None.
+## ft_putstr_fd
+`void ft_putstr_fd(char const *s, int fd)`
+
+Outputs the string s to the file descriptor fd.
+### Return Value
+None.
+## ft_putendl_fd
+`void ft_putendl_fd(char const *s, int fd)`
+
+Outputs the string s to the file descriptor fd followed by a '\n'.
+### Return Value
+None.
+## ft_putnbr_fd
+`void ft_putnbr_fd(int n, int fd)`
+
+Outputs the integer n to the file descriptor fd.
+### Return Value
+None.
+# Bonus part
