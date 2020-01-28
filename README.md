@@ -1,4 +1,4 @@
-# 42-libft
+# 42 Libft
 School 42 project - [Libft](libft.en.pdf).
 # Table of Contents
 * [Part 1 - Libc functions](#part-1---libc-functions)
